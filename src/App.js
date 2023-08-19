@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "./App.css";
 import Board from "./component/Board";
+// import KeyTest from "./component/KeyTest";
 
 function App() {
   const [history, setHistory] = useState([{ squares: Array(9).fill(null) }]);
@@ -51,7 +52,7 @@ function App() {
       <li key={move}>
         <button>{desc}</button>
       </li>
-    )
+    );
   });
   return (
     <div className="game">
@@ -62,6 +63,16 @@ function App() {
         <div className="status">{status}</div>
         <ol>{moves}</ol>
       </div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      {/* <KeyTest /> */}
     </div>
   );
 }
